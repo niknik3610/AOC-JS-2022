@@ -1,7 +1,7 @@
 //X = 1, Y = 2, Z = 3
 //A/X = ROCK, B/Y = PAPER, C/Z = SCISSORS 
+import {promises as fs} from 'fs';
 
-const fs = require('fs').promises; 
 const readInput = async (filePath: string) => {
     try {
         const data = await fs.readFile(filePath);
